@@ -1,0 +1,19 @@
+{
+  "name": "petcare-back",
+  "version": "1.0.0",
+  "description": "This a web page about pet care services",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "tep",
+    "care"
+  ],
+  "author": "Olvadis Hernandez, Lorenzo Lozano, Augusto Lobo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "node": "^18.20.0"
+  }
+}
