@@ -2,9 +2,12 @@
   "name": "petcare-back",
   "version": "1.0.0",
   "description": "This a web page about pet care services",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "node ./index.js",
+    "dev": "nodemon ./index.js"
   },
   "keywords": [
     "tep",
@@ -13,7 +16,11 @@
   "author": "Olvadis Hernandez, Lorenzo Lozano, Augusto Lobo",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "node": "^18.20.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
