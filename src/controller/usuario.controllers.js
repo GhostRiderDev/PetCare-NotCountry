@@ -1,6 +1,5 @@
 import { validationResult } from "express-validator";
 import { UserService } from "../service/User.service";
-import bcrypt from "bcrypt";
 import { validateUUID } from "../service/validation/utilValidation";
 import { validateUser } from "../service/validation/userValidation";
 
@@ -11,15 +10,6 @@ export const obtenerUsuario = async (req, res, next) => {
     validateUUID(req.params.id);
     const usuario = await userService.findUser(req.params.id);
     res.status(200).json(usuario);
-  } catch (err) {
-    next(err);
-  }
-};
-
-export const obtenerUsuarios = async (req, res, next) => {
-  try {
-    const usuarios = await userService.findUsers();
-    res.status(200).json(usuarios);
   } catch (err) {
     next(err);
   }
