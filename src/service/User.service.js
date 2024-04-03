@@ -1,5 +1,5 @@
 import InvalidOperatioError from "../error/InvalidOperationError";
-import Usuario from "../models/usuario";
+import Usuario from "../models/userSchema";
 
 export class UserService {
   constructor() {}
